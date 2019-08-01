@@ -1,0 +1,46 @@
+.restauracion {
+  margin-bottom: 50px;
+
+  @media screen and (max-width: $tablet) {
+    // display: none;
+  }
+}
+
+.res-container {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+
+  @media screen and (max-width: $tablet) {
+    display: flex;
+  }
+}
+
+.container2 {
+  margin-top: 50px;
+  @media screen and (max-width: $tablet) {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: $phone) {
+  #container1,
+  #container2,
+  #container3,
+  #container4 {
+    /* width: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,45 @@
+@import "ini-var";
+
+/* HEADER */
+
+@import "header";
+
+/* MAIN BANNER */
+
+@import "main-banner";
+
+main {
+  position: relative;
+  z-index: 1;
+  background-color: $white;
+}
+
+/* MODELS SECTION */
+
+@import "products";
+
+/* CONSOLE GALERY SECTION */
+
+// @import "productsgallery";
+
+/* GAME GALLERY SECTION */
+
+@import "game-gallery";
+
+/* .game-gallery-item img:hover{
+    transform: scale(1.3) translateY(10px);
+} */
+
+/* RESTAURATION SECTION */
+
+@import "restauration";
+
+/* FOOTER */
+
+@import "footer";
+
+/* SCROLL ICON*/
+
+@import "icon-scroll";
+
+@import "responsive";

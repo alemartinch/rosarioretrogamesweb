@@ -1,0 +1,85 @@
+// :root {
+//   /* COLORS */
+//   --color-yellow: #C9A754;
+//   --color-blue: #6F8082;
+//   --color-green: #87A667;
+//   --color-black: #271F17;
+//   --color-red: #BB281F;
+//   --color-white: #DCDCDC;
+//   /* Z-INDEX */
+//   --z-header: 30;
+//   --z-modal: 40;
+//   /* FUENTES     */
+
+// }
+
+// VARIABLES
+
+/* COLORS */
+$yellow: #c9a754;
+$blue: #6f8082;
+$green: #87a667;
+$black: #271f17;
+$red: #bb281f;
+$white: #dcdcdc;
+
+/* Z-INDEX */
+$z-header: 30;
+$z-modal: 40;
+
+// MEDIA BREAKPOINTS
+$phone: 400px;
+$tablet: 700px;
+$large: 1200px;
+
+*,
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  font-family: "Pontano Sans", sans-serif;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-family: "Fredoka One", cursive;
+  color: $red;
+  margin-bottom: 1%;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  @media screen and (max-width: $tablet) {
+    padding: 0px 35px;
+  }
+}
+
+h3 {
+  font-family: "Fredoka One", cursive;
+  font-size: 1.5em;
+}
+
+a {
+  // display: inline-block;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}

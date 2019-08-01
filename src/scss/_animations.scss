@@ -1,0 +1,13 @@
+@keyframes bounce {
+  0% {
+    transform: none;
+  }
+
+  50% {
+    transform: translateY(-20%);
+  }
+
+  100% {
+    transform: none;
+  }
+}
