@@ -105,6 +105,18 @@ module.exports = {
         useShortDoctype: true
       }
     }),
+    new HtmlWebpackPlugin({
+      filename: "./admin/index.html",
+      template: "./src/admin/index.pug",
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true
+      }
+    }),
     new MiniCssExtractPlugin({
       filename: "css/main.css"
     })
