@@ -520,6 +520,36 @@
             span.carousel-control-next-icon(aria-hidden='true')
             span.sr-only Next
 
+//- 4 joystick console gallery
+#console4GalleryModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+  .modal-dialog.modal-dialog-scrollable.modal-dialog-centered.modal-lg(role='document')
+    .modal-content
+      .modal-header
+        h3#exampleModalCenterTitle.modal-title
+          | Elegí entre más de 150 diseños ¡O
+          | personalizalo con el tuyo!
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+        #carouselConsole4.carousel.slide(data-ride='carousel')
+          ol.carousel-indicators
+            li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+            li(data-target='#carouselExampleIndicators' data-slide-to='1')
+            li(data-target='#carouselExampleIndicators' data-slide-to='2')
+          .carousel-inner
+            .carousel-item.active
+              img.d-block.w-100(src='static/img/consolaFour1.webp' alt='Foto Consola Arcade 1')
+            .carousel-item
+              img.d-block.w-100(src='static/img/consolaFour2.webp' alt='Foto Consola Arcade 2')
+            .carousel-item
+              img.d-block.w-100(src='static/img/consolaFour3.webp' alt='Foto Consola Arcade 3')
+          a.carousel-control-prev(href='#carouselConsole4' role='button' data-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.sr-only Previous
+          a.carousel-control-next(href='#carouselConsole4' role='button' data-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.sr-only Next
+
 //- Bartop Modal
 #bartopGalleryModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
   .modal-dialog.modal-dialog-scrollable.modal-dialog-centered(role='document')

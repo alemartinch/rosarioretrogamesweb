@@ -30,6 +30,10 @@ import "./static/img/consolas/arcade18.webp";
 import "./static/img/consolas/arcade19.webp";
 import "./static/img/consolas/arcade20.webp";
 
+import "./static/img/consolaFour/consolaFour1.webp";
+import "./static/img/consolaFour/consolaFour2.webp";
+import "./static/img/consolaFour/consolaFour3.webp";
+
 import "./static/img/bartops/bartopBTTF3.webp";
 import "./static/img/bartops/bartopBTTF6.webp";
 import "./static/img/bartops/bartopBTTF4.webp";

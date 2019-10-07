@@ -84,6 +84,18 @@
     &:nth-child(6) {
       @media (max-width: $tablet), (orientation: portrait) {
         flex-direction: column;
+        height: 800px;
+        justify-content: space-between;
+
+        .model-text {
+          height: 400px;
+        }
+      }
+    }
+
+    &:nth-child(7) {
+      @media (max-width: $tablet), (orientation: portrait) {
+        flex-direction: column;
         height: 700px;
         justify-content: space-between;
 
@@ -152,6 +164,13 @@
     @include product-card(
       url(../static/img/consola2mandos.png) no-repeat,
       url(../static/img/bgConsola.webp) no-repeat
+    );
+  }
+
+  .console-four {
+    @include product-card(
+      url(../static/img/consola4mandos.png) no-repeat,
+      url(../static/img/bgArcade.webp) no-repeat
     );
   }
 
@@ -274,9 +293,10 @@
 
     @media screen and (max-width: $tablet), (orientation: portrait) {
       width: 100%;
-      height: 60px;
+      height: 95px;
       font-size: 1em;
       flex-direction: row;
+      margin-top: 15px;
     }
   }
 
@@ -328,4 +348,10 @@
       height: 100%;
     }
   }
+}
+
+.btn-outline-info {
+  color: $white;
+  border-color: $white;
+  font-weight: bold;
 }

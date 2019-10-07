@@ -1,24 +1,3 @@
-const db = firebase.firestore();
-
-const bt = document.getElementById("boton");
-
-const miniPrice16 = document.getElementById("miniPrice16");
-
-bt.addEventListener("click", () => {
-  const miniPrice16 = document.getElementById("miniPrice16");
-  const miniPrice32 = document.getElementById("miniPrice32");
-  const miniPrice64 = document.getElementById("miniPrice64");
-  const twoJoysPrice16 = document.getElementById("twoJoysPrice16");
-  const twoJoysPrice32 = document.getElementById("twoJoysPrice32");
-  const twoJoysPrice64 = document.getElementById("twoJoysPrice64");
-  const bartopPriceSt = document.getElementById("bartopPriceSt");
-  const bartopPriceXl = document.getElementById("bartopPriceXl");
-  const joystickPrice = document.getElementById("joystickPrice");
-  const arcadePrice = document.getElementById("arcadePrice");
-  console.log(twoJoysPrice32);
-  miniPrice16.innerHTML = twoJoysPrice32.value;
-
-  arcadePrice.value = twoJoysPrice32.value;
   // db.collection("users")
   //   .add({
   //     first: "Ada",
@@ -58,7 +37,6 @@ bt.addEventListener("click", () => {
   //     console.log(errorMessage);
   //     // ...
   //   });
-});
 
 $(function() {
   $("#container1").beforeAfter({
@@ -79,6 +57,7 @@ $(function() {
     dividerColor: "#BB281F"
   });
 });
+
 
 // SCROLL SUAVE
 // $(document).ready(function() {

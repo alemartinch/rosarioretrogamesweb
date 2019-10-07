@@ -62,7 +62,7 @@ module.exports = {
               //   enabled: true
               // },
               pngquant: {
-                quality: "40",
+                quality: "60",
                 speed: 4
               },
               // gifsicle: {
@@ -96,18 +96,6 @@ module.exports = {
       filename: "index.html",
       template: "./src/index.pug",
       favicon: "./src/favicon.ico", //Adds the given favicon path to the output HTML
-      minify: {
-        collapseWhitespace: true,
-        removeComments: true,
-        removeRedundantAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
-        useShortDoctype: true
-      }
-    }),
-    new HtmlWebpackPlugin({
-      filename: "./admin/index.html",
-      template: "./src/admin/index.pug",
       minify: {
         collapseWhitespace: true,
         removeComments: true,
