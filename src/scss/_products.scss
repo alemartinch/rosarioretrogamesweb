@@ -148,8 +148,8 @@
 
   .miniconsole {
     @include product-card(
-      url(../static/img/RBcase.png) no-repeat,
-      url(../static/img/bgMiniconsola.webp) no-repeat
+      url('../static/img/RBcase.png') no-repeat,
+      url('../static/img/bgMiniconsola.webp') no-repeat
     );
   }
 
