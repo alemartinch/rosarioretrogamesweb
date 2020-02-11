@@ -2,6 +2,7 @@ import "./scss/site.scss";
 import "./static/img/logoRRG.png";
 import "./static/img/logo_footer.png";
 // import "./static/img/arcade-room.webp";
+import "./static/img/bgalquiler.webp";
 import "./static/media/MVI_1012.webm";
 // import "./static/img/trama.png";
 

@@ -2,15 +2,17 @@
 
 //- Modal Alquiler
 #alquilerModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
-  .modal-dialog.modal-dialog-centered(role='document')
+  .modal-dialog.modal-dialog-centered.modal-xl(role='document')
     .modal-content
       .modal-header
         h3#exampleModalCenterTitle.modal-title Rosario Retro Games
         button.close(type='button' data-dismiss='modal' aria-label='Close')
           span(aria-hidden='true') &times;
       .modal-body
-        p Alquilamos m&aacute;quinas arcades para cualquier tipo de evento.
-        p Comunicate por cualquiera de nuestras redes para obtener m&aacute;s informaci&oacute;n.
+        p(style='font-family:Arial')
+          strong Alquilá para cumpleaños, casamientos, eventos empresariales o sólo para divertirte con tus amigos...
+        img(src="static/img/bgalquiler.webp", alt="consolas retro para alquilar")
+        p Comunicate por cualquiera de nuestras redes para obtener más información.
         ul.redes-footer
           li.main-menu__item
             a.contact-link(href='https://wa.me/543416182002' target='_blank')
