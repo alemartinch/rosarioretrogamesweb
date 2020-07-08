@@ -130,7 +130,7 @@
     background-color: $red;
     border-radius: 1em;
     transition: all 0.5s ease;
-    box-shadow: 0px 0px 5px;
+    box-shadow: 0 0 5px;
 
     &:hover {
       background-size: 80%, 120%;
@@ -231,7 +231,7 @@
     justify-content: center;
     align-items: center;
     background-color: $red;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     color: $white;
     // cursor: pointer;
     border-radius: 0.3em;
@@ -252,7 +252,7 @@
       right: -110px;
       visibility: hidden;
       opacity: 0;
-      box-shadow: 0px 0px 5px black;
+      box-shadow: 0 0 5px black;
       border-radius: 5px;
       transition: all ease 0.2s;
       font-size: 1.5em;
@@ -303,7 +303,7 @@
   .principal-price {
     height: 130px;
     background-color: $green;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -318,7 +318,7 @@
   .alt-price {
     height: 130px;
     background-color: $blue;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -335,7 +335,7 @@
   .third-price {
     height: 120px;
     background-color: $yellow;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: space-around;

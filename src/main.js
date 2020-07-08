@@ -10,6 +10,15 @@ import "./static/img/handle.gif";
 import "./static/img/lt-small.png";
 import "./static/img/rt-small.png";
 
+import "./static/img/alquiler/evento1.jpg";
+import "./static/img/alquiler/evento2.jpg";
+import "./static/img/alquiler/evento3.jpg";
+import "./static/img/alquiler/evento4.jpg";
+import "./static/img/alquiler/evento5.jpg";
+import "./static/img/alquiler/evento6.jpg";
+import "./static/img/alquiler/evento7.jpg";
+import "./static/img/alquiler/evento8.jpg";
+
 import "./static/img/consolas/arcade1.webp";
 import "./static/img/consolas/arcade3.webp";
 import "./static/img/consolas/arcade4.webp";

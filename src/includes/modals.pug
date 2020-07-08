@@ -11,7 +11,41 @@
       .modal-body
         p(style='font-family:Arial')
           strong Alquilá para cumpleaños, casamientos, eventos empresariales o sólo para divertirte con tus amigos...
-        img(src="static/img/bgalquiler.webp", alt="consolas retro para alquilar")
+        //img(src="static/img/bgalquiler.webp", alt="consolas retro para alquilar")
+        #carouselExampleIndicatorsEvento.carousel.slide(data-ride='carousel')
+          ol.carousel-indicators
+            li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+            li(data-target='#carouselExampleIndicators' data-slide-to='1')
+            li(data-target='#carouselExampleIndicators' data-slide-to='2')
+            li(data-target='#carouselExampleIndicators' data-slide-to='3')
+            li(data-target='#carouselExampleIndicators' data-slide-to='4')
+            li(data-target='#carouselExampleIndicators' data-slide-to='5')
+            li(data-target='#carouselExampleIndicators' data-slide-to='6')
+            li(data-target='#carouselExampleIndicators' data-slide-to='7')
+            li(data-target='#carouselExampleIndicators' data-slide-to='8')
+          .carousel-inner
+            .carousel-item.active
+              img.d-block.w-100(src='static/img/evento1.jpg' alt='Foto Evento Alquiler 1')
+            .carousel-item
+              img.d-block.w-100(src='static/img/evento2.jpg' alt='Foto Evento Alquiler 2')
+            .carousel-item
+              img.d-block.w-100(src='static/img/evento3.jpg' alt='Foto Evento Alquiler 3')
+            .carousel-item
+              img.d-block.w-100(src='static/img/evento4.jpg' alt='Foto Evento Alquiler 4')
+            .carousel-item
+              img.d-block.w-100(src='static/img/evento5.jpg' alt='Foto Evento Alquiler 5')
+            .carousel-item
+              img.d-block.w-100(src='static/img/evento6.jpg' alt='Foto Evento Alquiler 6')
+            .carousel-item
+              img.d-block.w-100(src='static/img/evento7.jpg' alt='Foto Evento Alquiler 7')
+            .carousel-item
+              img.d-block.w-100(src='static/img/evento8.jpg' alt='Foto Evento Alquiler 8')
+          a.carousel-control-prev(href='#carouselExampleIndicatorsEvento' role='button' data-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.sr-only Previous
+          a.carousel-control-next(href='#carouselExampleIndicatorsEvento' role='button' data-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.sr-only Next
         p Comunicate por cualquiera de nuestras redes para obtener más información.
         ul.redes-footer
           li.main-menu__item
@@ -90,8 +124,8 @@
             tr
               td Linx
               td 76 Juegos
-        p 
-          small 
+        p
+          small
             em *Algunos juegos de N64 y DREAMCAST pueden correr un poco lentos.
 
 #gameList32Modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
@@ -113,10 +147,10 @@
               td 2380 Juegos
             tr
               td CAPCOM
-              td 85 Juegos  
+              td 85 Juegos
             tr
               td Family Game
-              td 78 Juegos  
+              td 78 Juegos
             tr
               td Super Nintendo
               td 981 Juegos
@@ -206,13 +240,13 @@
               td 90 Juegos
             tr
               td Apple 2
-              td 172 Juegos  
+              td 172 Juegos
             tr
               td Commodore 64
-              td 333 Juegos 
+              td 333 Juegos
             tr
               td MSX
-              td 552 Juegos 
+              td 552 Juegos
             tr
               td MSX 2X
               td 149 Juegos
@@ -222,8 +256,8 @@
             tr
               td Spectrum
               td 375 Juegos
-        p 
-          small 
+        p
+          small
             em *Algunos juegos de N64 pueden correr un poco lentos.
 
 #gameList64Modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
@@ -328,10 +362,10 @@
                 td 116 Juegos
               tr
                 td MSX
-                td 685 Juegos  
+                td 685 Juegos
               tr
                 td Amstrad CPC
-                td 361 Juegos  
+                td 361 Juegos
               tr
                 td Veetrox
                 td 109 Juegos
@@ -421,13 +455,13 @@
                 td 1070 Juegos
               tr
                 td Game Boy
-                td 489 Juegos  
+                td 489 Juegos
               tr
                 td Nintendo 64
                 td 150 Juegos *
               tr
                 td Nintendo Vision
-                td 91 Juegos 
+                td 91 Juegos
               tr
                 td Nintendo
                 td 2000 Juegos
@@ -437,8 +471,8 @@
               tr
                 td Super Famicom
                 td 259 Juegos
-        p 
-          small 
+        p
+          small
             em *Algunos juegos de N64 y DREAMCAST pueden correr un poco lentos.
 
 //- 2 joystick console gallery
