@@ -15,7 +15,7 @@
     position: relative; //Para que se ajuste el pseudoelemento after
     width: 100%;
     height: 400px;
-    margin-top: 3em;
+    margin-top: 6em;
     display: flex;
     justify-content: space-between;
 
@@ -27,7 +27,7 @@
       height: 5px;
       background: $red;
       position: absolute;
-      bottom: -20px;
+      bottom: -3em;
       left: 0;
       right: 0;
       margin: auto;
@@ -36,7 +36,7 @@
     &:nth-child(2) {
       @media (max-width: $tablet), (orientation: portrait) {
         flex-direction: column;
-        height: 700px;
+        height: 750px;
         justify-content: space-between;
 
         .model-text {
@@ -48,7 +48,7 @@
     &:nth-child(3) {
       @media (max-width: $tablet), (orientation: portrait) {
         flex-direction: column;
-        height: 900px;
+        height: 950px;
         justify-content: space-between;
 
         .model-text {
@@ -60,7 +60,7 @@
     &:nth-child(4) {
       @media (max-width: $tablet), (orientation: portrait) {
         flex-direction: column;
-        height: 800px;
+        height: 850px;
         justify-content: space-between;
 
         .model-text {
@@ -72,7 +72,7 @@
     &:nth-child(5) {
       @media (max-width: $tablet), (orientation: portrait) {
         flex-direction: column;
-        height: 800px;
+        height: 850px;
         justify-content: space-between;
 
         .model-text {
@@ -84,7 +84,19 @@
     &:nth-child(6) {
       @media (max-width: $tablet), (orientation: portrait) {
         flex-direction: column;
-        height: 800px;
+        height: 850px;
+        justify-content: space-between;
+
+        .model-text {
+          height: 490px;
+        }
+      }
+    }
+
+    &:nth-child(7) {
+      @media (max-width: $tablet), (orientation: portrait) {
+        flex-direction: column;
+        height: 750px;
         justify-content: space-between;
 
         .model-text {
@@ -93,14 +105,14 @@
       }
     }
 
-    &:nth-child(7) {
+    &:nth-child(8) {
       @media (max-width: $tablet), (orientation: portrait) {
         flex-direction: column;
-        height: 700px;
+        height: 900px;
         justify-content: space-between;
 
         .model-text {
-          height: 400px;
+          height: 550px;
         }
       }
     }
@@ -133,7 +145,7 @@
     box-shadow: 0 0 5px;
 
     &:hover {
-      background-size: 80%, 120%;
+      background-size: 100%, 100%;
     }
 
     @media screen and (max-width: $tablet), (orientation: portrait) {
@@ -142,49 +154,56 @@
     }
 
     background: $background1, $background2;
-    background-size: 100%, 100%;
+    background-size: 80%, 120%;
     background-position: center, center;
   }
 
   .miniconsole {
     @include product-card(
-      url('../static/img/RBcase.png') no-repeat,
-      url('../static/img/bgMiniconsola.webp') no-repeat
+                    url('../static/img/RBcase.png') no-repeat,
+                    url('../static/img/bgMiniconsola.webp') no-repeat
     );
   }
 
   .arcade {
     @include product-card(
-      url(../static/img/arcade.png) no-repeat,
-      url(../static/img/bgArcade.webp) no-repeat
+                    url(../static/img/arcade.png) no-repeat,
+                    url(../static/img/bgArcade.webp) no-repeat
     );
   }
 
   .console {
     @include product-card(
-      url(../static/img/consola2mandos.png) no-repeat,
-      url(../static/img/bgConsola.webp) no-repeat
+                    url(../static/img/consola2mandos.png) no-repeat,
+                    url(../static/img/bgConsola.webp) no-repeat
     );
   }
 
   .console-four {
     @include product-card(
-      url(../static/img/consola4mandos.png) no-repeat,
-      url(../static/img/bgArcade.webp) no-repeat
+                    url(../static/img/consola4mandos.png) no-repeat,
+                    url(../static/img/bgArcade.webp) no-repeat
     );
   }
 
   .bartop {
     @include product-card(
-      url(../static/img/bartop.png) no-repeat,
-      url(../static/img/bgMiniconsola.webp) no-repeat
+                    url(../static/img/bartop.png) no-repeat,
+                    url(../static/img/bgMiniconsola.webp) no-repeat
     );
   }
 
   .joystick {
     @include product-card(
-      url(../static/img/joystick.png) no-repeat,
-      url(../static/img/bgConsola.webp) no-repeat
+                    url(../static/img/joystick.png) no-repeat,
+                    url(../static/img/bgConsola.webp) no-repeat
+    );
+  }
+
+  .flipper {
+    @include product-card(
+                    url(../static/img/flipper.png) no-repeat,
+                    url(../static/img/bgMiniconsola.webp) no-repeat
     );
   }
 
@@ -219,7 +238,7 @@
   .button-container {
     width: 200px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -239,6 +258,10 @@
     // line-height: 50px;
     transition: all ease 0.5s;
     font-size: 0.9em;
+
+    span {
+      cursor: context-menu;
+    }
 
     .menu-tooltip {
       position: absolute;
@@ -290,6 +313,10 @@
     flex-direction: column;
     justify-content: space-around;
     font-size: 1.5em;
+
+    a {
+      text-decoration: underline;
+    }
 
     @media screen and (max-width: $tablet), (orientation: portrait) {
       width: 100%;

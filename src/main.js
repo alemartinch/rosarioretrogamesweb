@@ -51,6 +51,14 @@ import "./static/img/bartops/bartopMulti4.webp";
 import "./static/img/bartops/bartopMulti3.webp";
 import "./static/img/bartops/bartopMulti5.webp";
 
+import "./static/img/flippers/flipper1.webp";
+import "./static/img/flippers/flipper2.webp";
+import "./static/img/flippers/flipper3.webp";
+import "./static/img/flippers/flipper4.webp";
+import "./static/img/flippers/flipper5.webp";
+import "./static/img/flippers/flipper6.webp";
+import "./static/img/flippers/flipper7.webp";
+
 import "./static/img/juegos/juego1.webp";
 import "./static/img/juegos/juego2.webp";
 import "./static/img/juegos/juego3.webp";
