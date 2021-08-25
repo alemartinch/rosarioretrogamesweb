@@ -236,7 +236,7 @@
   }
 
   .button-container {
-    width: 200px;
+    width: 255px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -258,6 +258,10 @@
     // line-height: 50px;
     transition: all ease 0.5s;
     font-size: 0.9em;
+
+    &:hover {
+      background-color: darkred;
+    }
 
     span {
       cursor: context-menu;
@@ -300,10 +304,6 @@
       visibility: visible;
       opacity: 1;
     }
-  }
-
-  .request-buttom:hover {
-    background-color: darkred;
   }
 
   .prices-container {

@@ -1,668 +1,617 @@
+// MIXINS
+
+mixin closeBtn
+    a.close(type='button' data-dismiss='modal' aria-label='Close' style="position: absolute; top: 0; right: 5%;")
+        span(aria-hidden='true' style="font-size: 4em; color: white;") &times;
+
 //- MODALS
 
 //- Modal Alquiler
 #alquilerModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
-  .modal-dialog.modal-dialog-centered.modal-xl(role='document')
-    .modal-content
-      .modal-header
-        h3#exampleModalCenterTitle.modal-title Rosario Retro Games
-        button.close(type='button' data-dismiss='modal' aria-label='Close')
-          span(aria-hidden='true') &times;
-      .modal-body
-        p(style='font-family:Arial')
-          strong Alquilá para cumpleaños, casamientos, eventos empresariales o sólo para divertirte con tus amigos...
-        //img(src="static/img/bgalquiler.webp", alt="consolas retro para alquilar")
-        #carouselExampleIndicatorsEvento.carousel.slide(data-ride='carousel')
-          ol.carousel-indicators
-            li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
-            li(data-target='#carouselExampleIndicators' data-slide-to='1')
-            li(data-target='#carouselExampleIndicators' data-slide-to='2')
-            li(data-target='#carouselExampleIndicators' data-slide-to='3')
-            li(data-target='#carouselExampleIndicators' data-slide-to='4')
-            li(data-target='#carouselExampleIndicators' data-slide-to='5')
-            li(data-target='#carouselExampleIndicators' data-slide-to='6')
-            li(data-target='#carouselExampleIndicators' data-slide-to='7')
-            li(data-target='#carouselExampleIndicators' data-slide-to='8')
-          .carousel-inner
-            .carousel-item.active
-              img.d-block.w-100(src='static/img/evento1.jpg' alt='Foto Evento Alquiler 1')
-            .carousel-item
-              img.d-block.w-100(src='static/img/evento2.jpg' alt='Foto Evento Alquiler 2')
-            .carousel-item
-              img.d-block.w-100(src='static/img/evento3.jpg' alt='Foto Evento Alquiler 3')
-            .carousel-item
-              img.d-block.w-100(src='static/img/evento4.jpg' alt='Foto Evento Alquiler 4')
-            .carousel-item
-              img.d-block.w-100(src='static/img/evento5.jpg' alt='Foto Evento Alquiler 5')
-            .carousel-item
-              img.d-block.w-100(src='static/img/evento6.jpg' alt='Foto Evento Alquiler 6')
-            .carousel-item
-              img.d-block.w-100(src='static/img/evento7.jpg' alt='Foto Evento Alquiler 7')
-            .carousel-item
-              img.d-block.w-100(src='static/img/evento8.jpg' alt='Foto Evento Alquiler 8')
-          a.carousel-control-prev(href='#carouselExampleIndicatorsEvento' role='button' data-slide='prev')
-            span.carousel-control-prev-icon(aria-hidden='true')
-            span.sr-only Previous
-          a.carousel-control-next(href='#carouselExampleIndicatorsEvento' role='button' data-slide='next')
-            span.carousel-control-next-icon(aria-hidden='true')
-            span.sr-only Next
-        p Comunicate por cualquiera de nuestras redes para obtener más información.
-        ul.redes-footer
-          li.main-menu__item
-            a.contact-link(href='https://wa.me/543416182002' target='_blank')
-              i.fab.fa-whatsapp.fa-2x
-          li.main-menu__item
-            a.contact-link(href='https://www.facebook.com/RosarioRetroGames/' target='_blank')
-              i.fab.fa-facebook-square.fa-2x
-          li.main-menu__item
-            a.contact-link(href='https://www.instagram.com/rosarioretrogame/?hl=es-la' target='_blank')
-              i.fab.fa-instagram.fa-2x
+    +closeBtn
+    .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+        .modal-content
+            .modal-header
+                h3#exampleModalCenterTitle.modal-title Rosario Retro Games
+            .modal-body
+                p(style='font-family:Arial')
+                    strong Alquilá para cumpleaños, casamientos, eventos empresariales o sólo para divertirte con tus amigos...
+                #carouselExampleIndicatorsEvento.carousel.slide(data-ride='carousel')
+                    ol.carousel-indicators
+                        li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+                        li(data-target='#carouselExampleIndicators' data-slide-to='1')
+                        li(data-target='#carouselExampleIndicators' data-slide-to='2')
+                        li(data-target='#carouselExampleIndicators' data-slide-to='3')
+                        li(data-target='#carouselExampleIndicators' data-slide-to='4')
+                        li(data-target='#carouselExampleIndicators' data-slide-to='5')
+                        li(data-target='#carouselExampleIndicators' data-slide-to='6')
+                        li(data-target='#carouselExampleIndicators' data-slide-to='7')
+                        li(data-target='#carouselExampleIndicators' data-slide-to='8')
+                    .carousel-inner
+                        .carousel-item.active
+                            img.d-block.w-100(src='static/img/evento1.jpg' alt='Foto Evento Alquiler 1')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/evento2.jpg' alt='Foto Evento Alquiler 2')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/evento3.jpg' alt='Foto Evento Alquiler 3')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/evento4.jpg' alt='Foto Evento Alquiler 4')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/evento5.jpg' alt='Foto Evento Alquiler 5')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/evento6.jpg' alt='Foto Evento Alquiler 6')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/evento7.jpg' alt='Foto Evento Alquiler 7')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/evento8.jpg' alt='Foto Evento Alquiler 8')
+                    a.carousel-control-prev(href='#carouselExampleIndicatorsEvento' role='button' data-slide='prev')
+                        span.carousel-control-prev-icon(aria-hidden='true')
+                        span.sr-only Previous
+                    a.carousel-control-next(href='#carouselExampleIndicatorsEvento' role='button' data-slide='next')
+                        span.carousel-control-next-icon(aria-hidden='true')
+                        span.sr-only Next
+                p Comunicate por cualquiera de nuestras redes para obtener más información.
+                ul.redes-footer
+                    li.main-menu__item
+                        a.contact-link(href='https://wa.me/543416182002' target='_blank')
+                            i.fab.fa-whatsapp.fa-2x
+                    li.main-menu__item
+                        a.contact-link(href='https://www.facebook.com/RosarioRetroGames/' target='_blank')
+                            i.fab.fa-facebook-square.fa-2x
+                    li.main-menu__item
+                        a.contact-link(href='https://www.instagram.com/rosarioretrogame/?hl=es-la' target='_blank')
+                            i.fab.fa-instagram.fa-2x
 
 //- Modal GameList
 #gameList16Modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
-  .modal-dialog.modal-dialog-centered(role='document')
-    .modal-content
-      .modal-header
-        h3#exampleModalCenterTitle.modal-title 16 GB | +6000 JUEGOS
-        button.close(type='button' data-dismiss='modal' aria-label='Close')
-          span(aria-hidden='true') &times;
-      .modal-body
-        table.table.table-striped.table-sm
-          thead
-            tr
-              th(scope='col') Emulador
-              th(scope='col') Juegos
-          tbody
-            tr
-              td MAME (Arcade/Fichines)
-              td 1215 Juegos
-            tr
-              td Super Nintendo
-              td 789 Juegos
-            tr
-              td Nintendo
-              td 791 Juegos
-            tr
-              td Nintendo 64
-              td 14 Juegos *
-            tr
-              td Gameboy Advance
-              td 209 Juegos
-            tr
-              td Gameboy color
-              td 547 Juegos
-            tr
-              td Gameboy
-              td 499 Juegos
-            tr
-              td Dreamcast
-              td 1 Juego *
-            tr
-              td SEGA Genesis
-              td 824 Juegos
-            tr
-              td SEGA 32X
-              td 37 Juegos
-            tr
-              td Master System
-              td 278 Juegos
-            tr
-              td Game Gear
-              td 266 Juegos
-            tr
-              td PSP
-              td 1 Juego
-            tr
-              td PlayStation 1 (PSP1)
-              td 1 Juego
-            tr
-              td CPS
-              td 28 Juegos
-            tr
-              td Atari 7800
-              td 59 Juegos
-            tr
-              td Linx
-              td 76 Juegos
-        p
-          small
-            em *Algunos juegos de N64 y DREAMCAST pueden correr un poco lentos.
+    .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+            .modal-header
+                h3#exampleModalCenterTitle.modal-title 16 GB | +6000 JUEGOS
+                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                    span(aria-hidden='true') &times;
+            .modal-body
+                table.table.table-striped.table-sm
+                    thead
+                        tr
+                            th(scope='col') Emulador
+                            th(scope='col') Juegos
+                    tbody
+                        tr
+                            td MAME (Arcade/Fichines)
+                            td 1215 Juegos
+                        tr
+                            td Super Nintendo
+                            td 789 Juegos
+                        tr
+                            td Nintendo
+                            td 791 Juegos
+                        tr
+                            td Nintendo 64
+                            td 14 Juegos *
+                        tr
+                            td Gameboy Advance
+                            td 209 Juegos
+                        tr
+                            td Gameboy color
+                            td 547 Juegos
+                        tr
+                            td Gameboy
+                            td 499 Juegos
+                        tr
+                            td Dreamcast
+                            td 1 Juego *
+                        tr
+                            td SEGA Genesis
+                            td 824 Juegos
+                        tr
+                            td SEGA 32X
+                            td 37 Juegos
+                        tr
+                            td Master System
+                            td 278 Juegos
+                        tr
+                            td Game Gear
+                            td 266 Juegos
+                        tr
+                            td PSP
+                            td 1 Juego
+                        tr
+                            td PlayStation 1 (PSP1)
+                            td 1 Juego
+                        tr
+                            td CPS
+                            td 28 Juegos
+                        tr
+                            td Atari 7800
+                            td 59 Juegos
+                        tr
+                            td Linx
+                            td 76 Juegos
+                p
+                    small
+                        em *Algunos juegos de N64 y DREAMCAST pueden correr un poco lentos.
 
 #gameList32Modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
-  .modal-dialog.modal-dialog-centered(role='document')
-    .modal-content
-      .modal-header
-        h3#exampleModalCenterTitle.modal-title 32 GB | +10000 JUEGOS
-        button.close(type='button' data-dismiss='modal' aria-label='Close')
-          span(aria-hidden='true') &times;
-      .modal-body
-        table.table.table-striped.table-sm
-          thead
-            tr
-              th(scope='col') Emulador
-              th(scope='col') Juegos
-          tbody
-            tr
-              td MAME (Arcade/Fichines)
-              td 2380 Juegos
-            tr
-              td CAPCOM
-              td 85 Juegos
-            tr
-              td Family Game
-              td 78 Juegos
-            tr
-              td Super Nintendo
-              td 981 Juegos
-            tr
-              td Nintendo
-              td 1081 Juegos
-            tr
-              td Nintendo 64
-              td 30 Juegos *
-            tr
-              td Game&Watch
-              td 52 Juegos
-            tr
-              td Gameboy Advance
-              td 1045 Juegos
-            tr
-              td Gameboy color
-              td 581 Juegos
-            tr
-              td Gameboy
-              td 599 Juegos
-            tr
-              td Virtual Boy
-              td 31 Juegos
-            tr
-              td Sega SD-1000
-              td 88 Juegos
-            tr
-              td Sega Megadrive
-              td 818 Juegos
-            tr
-              td SEGA Genesis
-              td 824 Juegos
-            tr
-              td SEGA 32X
-              td 37 Juegos
-            tr
-              td Master System
-              td 385 Juegos
-            tr
-              td Game Gear
-              td 282 Juegos
-            tr
-              td Neo Geo
-              td 151 Juegos
-            tr
-              td Neo Geo Pocket
-              td 81 Juegos
-            tr
-              td PSP
-              td 1 Juego
-            tr
-              td PlayStation 1 (PSP1)
-              td 14 Juegos
-            tr
-              td Atari 2600
-              td 636 Juegos
-            tr
-              td Atari 7800
-              td 65 Juegos
-            tr
-              td Atari ST
-              td 275 Juegos
-            tr
-              td Linx
-              td 82 Juegos
-            tr
-              td Coleco Vision
-              td 158 Juegos
-            tr
-              td Odissey 2
-              td 113 Juegos
-            tr
-              td PC Engine
-              td 313 Juegos
-            tr
-              td Super Graph
-              td 5 Juegos
-            tr
-              td Vertgorex
-              td 33 Juegos
-            tr
-              td Wonderswan
-              td 105 Juegos
-            tr
-              td Wonderswan Color
-              td 90 Juegos
-            tr
-              td Apple 2
-              td 172 Juegos
-            tr
-              td Commodore 64
-              td 333 Juegos
-            tr
-              td MSX
-              td 552 Juegos
-            tr
-              td MSX 2X
-              td 149 Juegos
-            tr
-              td Sinclair
-              td 24 Juegos
-            tr
-              td Spectrum
-              td 375 Juegos
-        p
-          small
-            em *Algunos juegos de N64 pueden correr un poco lentos.
+    .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+            .modal-header
+                h3#exampleModalCenterTitle.modal-title 32 GB | +10000 JUEGOS
+                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                    span(aria-hidden='true') &times;
+            .modal-body
+                table.table.table-striped.table-sm
+                    thead
+                        tr
+                            th(scope='col') Emulador
+                            th(scope='col') Juegos
+                    tbody
+                        tr
+                            td MAME (Arcade/Fichines)
+                            td 2380 Juegos
+                        tr
+                            td CAPCOM
+                            td 85 Juegos
+                        tr
+                            td Family Game
+                            td 78 Juegos
+                        tr
+                            td Super Nintendo
+                            td 981 Juegos
+                        tr
+                            td Nintendo
+                            td 1081 Juegos
+                        tr
+                            td Nintendo 64
+                            td 30 Juegos *
+                        tr
+                            td Game&Watch
+                            td 52 Juegos
+                        tr
+                            td Gameboy Advance
+                            td 1045 Juegos
+                        tr
+                            td Gameboy color
+                            td 581 Juegos
+                        tr
+                            td Gameboy
+                            td 599 Juegos
+                        tr
+                            td Virtual Boy
+                            td 31 Juegos
+                        tr
+                            td Sega SD-1000
+                            td 88 Juegos
+                        tr
+                            td Sega Megadrive
+                            td 818 Juegos
+                        tr
+                            td SEGA Genesis
+                            td 824 Juegos
+                        tr
+                            td SEGA 32X
+                            td 37 Juegos
+                        tr
+                            td Master System
+                            td 385 Juegos
+                        tr
+                            td Game Gear
+                            td 282 Juegos
+                        tr
+                            td Neo Geo
+                            td 151 Juegos
+                        tr
+                            td Neo Geo Pocket
+                            td 81 Juegos
+                        tr
+                            td PSP
+                            td 1 Juego
+                        tr
+                            td PlayStation 1 (PSP1)
+                            td 14 Juegos
+                        tr
+                            td Atari 2600
+                            td 636 Juegos
+                        tr
+                            td Atari 7800
+                            td 65 Juegos
+                        tr
+                            td Atari ST
+                            td 275 Juegos
+                        tr
+                            td Linx
+                            td 82 Juegos
+                        tr
+                            td Coleco Vision
+                            td 158 Juegos
+                        tr
+                            td Odissey 2
+                            td 113 Juegos
+                        tr
+                            td PC Engine
+                            td 313 Juegos
+                        tr
+                            td Super Graph
+                            td 5 Juegos
+                        tr
+                            td Vertgorex
+                            td 33 Juegos
+                        tr
+                            td Wonderswan
+                            td 105 Juegos
+                        tr
+                            td Wonderswan Color
+                            td 90 Juegos
+                        tr
+                            td Apple 2
+                            td 172 Juegos
+                        tr
+                            td Commodore 64
+                            td 333 Juegos
+                        tr
+                            td MSX
+                            td 552 Juegos
+                        tr
+                            td MSX 2X
+                            td 149 Juegos
+                        tr
+                            td Sinclair
+                            td 24 Juegos
+                        tr
+                            td Spectrum
+                            td 375 Juegos
+                p
+                    small
+                        em *Algunos juegos de N64 pueden correr un poco lentos.
 
 #gameList64Modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
-  .modal-dialog.modal-dialog-centered(role='document')
-    .modal-content
-      .modal-header
-        h3#exampleModalCenterTitle.modal-title 64 GB | +13000 JUEGOS
-        button.close(type='button' data-dismiss='modal' aria-label='Close')
-          span(aria-hidden='true') &times;
-      .modal-body
-        h5 Arcades - Fichines
-        table.table.table-striped.table-sm
-          thead
-            tr
-              th(scope='col') Emulador
-              th(scope='col') Juegos
-            tbody
-              tr
-                td Neo Geo
-                td 171 Juegos
-              tr
-                td Psykio
-                td 14 Juegos
-              tr
-                td Data East
-                td 87 Juegos
-              tr
-                td Top Plan
-                td 17 Juegos
-              tr
-                td Cave
-                td 15 Juegos
-              tr
-                td Tecnos
-                td 20 Juegos
-              tr
-                td IMEM
-                td 64 Juegos
-              tr
-                td PGM
-                td 20 Juegos
-              tr
-                td MAME
-                td 800 Juegos
-              tr
-                td Capcom
-                td 72 Juegos
-              tr
-                td Seta
-                td 22 Juegos
-              tr
-                td Bing
-                td 5 Juegos
-              tr
-                td Gaelco
-                td 12 Juegos
-              tr
-                td Seibu
-                td 12 Juegos
-              tr
-                td Visgo
-                td 12 Juegos
-              tr
-                td Video System
-                td 13 Juegos
-              tr
-                td Sammy
-                td 20 Juegos
-              tr
-                td Taito
-                td 228 Juegos
-              tr
-                td SNK
-                td 47 Juegos
-              tr
-                td Namco
-                td 120 Juegos
-              tr
-                td Midway
-                td 87 Juegos
-              tr
-                td Konami
-                td 144 Juegos
-              tr
-                td Haneko
-                td 26 Juegos
-              tr
-                td Jaleco
-                td 45 Juegos
-              tr
-                td Banpreso
-                td 24 Juegos
-        h5 Resto de Consolas
-        table.table.table-striped.table-sm
-          thead
-            tr
-              th(scope='col') Emulador
-              th(scope='col') Juegos
-            tbody
-              tr
-                td Oddisey
-                td 116 Juegos
-              tr
-                td MSX
-                td 685 Juegos
-              tr
-                td Amstrad CPC
-                td 361 Juegos
-              tr
-                td Veetrox
-                td 109 Juegos
-              tr
-                td Coleco Vision
-                td 149 Juegos
-              tr
-                td Doom
-                td 6 Juegos
-              tr
-                td Wonder Swam Color
-                td 91 Juegos
-              tr
-                td Wonder Swam
-                td 82 Juegos
-              tr
-                td Neo Geo Pocket Color
-                td 86 Juegos
-              tr
-                td Linx
-                td 76 Juegos
-              tr
-                td Atari
-                td 700 Juegos
-              tr
-                td Scumm Um
-                td 2 Juegos
-              tr
-                td Super Graff
-                td 5 Juegos
-              tr
-                td Turbo Graff
-                td 300 Juegos
-              tr
-                td PSP
-                td 2 Juegos
-              tr
-                td Playstation 1
-                td 32 Juegos
-              tr
-                td Star Wars
-                td 27 Juegos
-              tr
-                td Sega 1000
-                td 68 Juegos
-              tr
-                td Game Gear
-                td 262 Juegos
-              tr
-                td Dreamcast
-                td 15 Juegos *
-              tr
-                td Sega CD
-                td 16 Juegos
-              tr
-                td Sega 32X
-                td 37 Juegos
-              tr
-                td Sega Mega Hack
-                td 189 Juegos
-              tr
-                td Mega Drive
-                td 294 Juegos
-              tr
-                td Sega Mega Drive
-                td 904 Juegos
-              tr
-                td Tec Toy
-                td 41 Juegos
-              tr
-                td Sega Master System
-                td 294 Juegos
-              tr
-                td Game&Watch
-                td 51
-              tr
-                td Virtual Boy
-                td 26 Juegos
-              tr
-                td Family Game
-                td 237 Juegos
-              tr
-                td Game Boy Color
-                td 545 Juegos
-              tr
-                td Game Boy Advance
-                td 1070 Juegos
-              tr
-                td Game Boy
-                td 489 Juegos
-              tr
-                td Nintendo 64
-                td 150 Juegos *
-              tr
-                td Nintendo Vision
-                td 91 Juegos
-              tr
-                td Nintendo
-                td 2000 Juegos
-              tr
-                td Super Nintendo
-                td 900 Juegos
-              tr
-                td Super Famicom
-                td 259 Juegos
-        p
-          small
-            em *Algunos juegos de N64 y DREAMCAST pueden correr un poco lentos.
+    .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+            .modal-header
+                h3#exampleModalCenterTitle.modal-title 64 GB | +13000 JUEGOS
+                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                    span(aria-hidden='true') &times;
+            .modal-body
+                h5 Arcades - Fichines
+                table.table.table-striped.table-sm
+                    thead
+                        tr
+                            th(scope='col') Emulador
+                            th(scope='col') Juegos
+                        tbody
+                            tr
+                                td Neo Geo
+                                td 171 Juegos
+                            tr
+                                td Psykio
+                                td 14 Juegos
+                            tr
+                                td Data East
+                                td 87 Juegos
+                            tr
+                                td Top Plan
+                                td 17 Juegos
+                            tr
+                                td Cave
+                                td 15 Juegos
+                            tr
+                                td Tecnos
+                                td 20 Juegos
+                            tr
+                                td IMEM
+                                td 64 Juegos
+                            tr
+                                td PGM
+                                td 20 Juegos
+                            tr
+                                td MAME
+                                td 800 Juegos
+                            tr
+                                td Capcom
+                                td 72 Juegos
+                            tr
+                                td Seta
+                                td 22 Juegos
+                            tr
+                                td Bing
+                                td 5 Juegos
+                            tr
+                                td Gaelco
+                                td 12 Juegos
+                            tr
+                                td Seibu
+                                td 12 Juegos
+                            tr
+                                td Visgo
+                                td 12 Juegos
+                            tr
+                                td Video System
+                                td 13 Juegos
+                            tr
+                                td Sammy
+                                td 20 Juegos
+                            tr
+                                td Taito
+                                td 228 Juegos
+                            tr
+                                td SNK
+                                td 47 Juegos
+                            tr
+                                td Namco
+                                td 120 Juegos
+                            tr
+                                td Midway
+                                td 87 Juegos
+                            tr
+                                td Konami
+                                td 144 Juegos
+                            tr
+                                td Haneko
+                                td 26 Juegos
+                            tr
+                                td Jaleco
+                                td 45 Juegos
+                            tr
+                                td Banpreso
+                                td 24 Juegos
+                h5 Resto de Consolas
+                table.table.table-striped.table-sm
+                    thead
+                        tr
+                            th(scope='col') Emulador
+                            th(scope='col') Juegos
+                        tbody
+                            tr
+                                td Oddisey
+                                td 116 Juegos
+                            tr
+                                td MSX
+                                td 685 Juegos
+                            tr
+                                td Amstrad CPC
+                                td 361 Juegos
+                            tr
+                                td Veetrox
+                                td 109 Juegos
+                            tr
+                                td Coleco Vision
+                                td 149 Juegos
+                            tr
+                                td Doom
+                                td 6 Juegos
+                            tr
+                                td Wonder Swam Color
+                                td 91 Juegos
+                            tr
+                                td Wonder Swam
+                                td 82 Juegos
+                            tr
+                                td Neo Geo Pocket Color
+                                td 86 Juegos
+                            tr
+                                td Linx
+                                td 76 Juegos
+                            tr
+                                td Atari
+                                td 700 Juegos
+                            tr
+                                td Scumm Um
+                                td 2 Juegos
+                            tr
+                                td Super Graff
+                                td 5 Juegos
+                            tr
+                                td Turbo Graff
+                                td 300 Juegos
+                            tr
+                                td PSP
+                                td 2 Juegos
+                            tr
+                                td Playstation 1
+                                td 32 Juegos
+                            tr
+                                td Star Wars
+                                td 27 Juegos
+                            tr
+                                td Sega 1000
+                                td 68 Juegos
+                            tr
+                                td Game Gear
+                                td 262 Juegos
+                            tr
+                                td Dreamcast
+                                td 15 Juegos *
+                            tr
+                                td Sega CD
+                                td 16 Juegos
+                            tr
+                                td Sega 32X
+                                td 37 Juegos
+                            tr
+                                td Sega Mega Hack
+                                td 189 Juegos
+                            tr
+                                td Mega Drive
+                                td 294 Juegos
+                            tr
+                                td Sega Mega Drive
+                                td 904 Juegos
+                            tr
+                                td Tec Toy
+                                td 41 Juegos
+                            tr
+                                td Sega Master System
+                                td 294 Juegos
+                            tr
+                                td Game&Watch
+                                td 51
+                            tr
+                                td Virtual Boy
+                                td 26 Juegos
+                            tr
+                                td Family Game
+                                td 237 Juegos
+                            tr
+                                td Game Boy Color
+                                td 545 Juegos
+                            tr
+                                td Game Boy Advance
+                                td 1070 Juegos
+                            tr
+                                td Game Boy
+                                td 489 Juegos
+                            tr
+                                td Nintendo 64
+                                td 150 Juegos *
+                            tr
+                                td Nintendo Vision
+                                td 91 Juegos
+                            tr
+                                td Nintendo
+                                td 2000 Juegos
+                            tr
+                                td Super Nintendo
+                                td 900 Juegos
+                            tr
+                                td Super Famicom
+                                td 259 Juegos
+                p
+                    small
+                        em *Algunos juegos de N64 y DREAMCAST pueden correr un poco lentos.
 
 //- 2 joystick console gallery
 #consoleGalleryModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
-  .modal-dialog.modal-dialog-scrollable.modal-dialog-centered.modal-lg(role='document')
-    .modal-content
-      .modal-header
-        h3#exampleModalCenterTitle.modal-title
-          | Elegí entre más de 150 diseños ¡O
-          | personalizalo con el tuyo!
-        button.close(type='button' data-dismiss='modal' aria-label='Close')
-          span(aria-hidden='true') &times;
-      .modal-body
-        #carouselExampleIndicators.carousel.slide(data-ride='carousel')
-          ol.carousel-indicators
-            li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
-            li(data-target='#carouselExampleIndicators' data-slide-to='1')
-            li(data-target='#carouselExampleIndicators' data-slide-to='2')
-            li(data-target='#carouselExampleIndicators' data-slide-to='3')
-            li(data-target='#carouselExampleIndicators' data-slide-to='4')
-            li(data-target='#carouselExampleIndicators' data-slide-to='5')
-            li(data-target='#carouselExampleIndicators' data-slide-to='6')
-            li(data-target='#carouselExampleIndicators' data-slide-to='7')
-            li(data-target='#carouselExampleIndicators' data-slide-to='8')
-            li(data-target='#carouselExampleIndicators' data-slide-to='9')
-            li(data-target='#carouselExampleIndicators' data-slide-to='10')
-            li(data-target='#carouselExampleIndicators' data-slide-to='11')
-            li(data-target='#carouselExampleIndicators' data-slide-to='12')
-            li(data-target='#carouselExampleIndicators' data-slide-to='13')
-            li(data-target='#carouselExampleIndicators' data-slide-to='14')
-            li(data-target='#carouselExampleIndicators' data-slide-to='15')
-            li(data-target='#carouselExampleIndicators' data-slide-to='16')
-            li(data-target='#carouselExampleIndicators' data-slide-to='17')
-            li(data-target='#carouselExampleIndicators' data-slide-to='18')
-            li(data-target='#carouselExampleIndicators' data-slide-to='19')
-          .carousel-inner
-            .carousel-item.active
-              img.d-block.w-100(src='static/img/arcade1.webp' alt='Foto Consola Arcade 1')
-            .carousel-item
-              img.d-block.w-100(src='static/img/arcade2.webp' alt='Foto Consola Arcade 2')
-            .carousel-item
-              img.d-block.w-100(src='static/img/arcade3.webp' alt='Foto Consola Arcade 3')
-            .carousel-item
-              img.d-block.w-100(src='static/img/arcade4.webp' alt='Foto Consola Arcade 4')
-            .carousel-item
-              img.d-block.w-100(src='static/img/arcade5.webp' alt='Foto Consola Arcade 5')
-            .carousel-item
-              img.d-block.w-100(src='static/img/arcade6.webp' alt='Foto Consola Arcade 6')
-            .carousel-item
-              img.d-block.w-100(src='static/img/arcade7.webp' alt='Foto Consola Arcade 7')
-            .carousel-item
-              img.d-block.w-100(src='static/img/arcade8.webp' alt='Foto Consola Arcade 8')
-            .carousel-item
-              img.d-block.w-100(src='static/img/arcade9.webp' alt='Foto Consola Arcade 9')
-            .carousel-item
-              img.d-block.w-100(src='static/img/arcade10.webp' alt='Foto Consola Arcade 10')
-            .carousel-item
-              img.d-block.w-100(src='static/img/arcade11.webp' alt='Foto Consola Arcade 11')
-            .carousel-item
-              img.d-block.w-100(src='static/img/arcade12.webp' alt='Foto Consola Arcade 12')
-            .carousel-item
-              img.d-block.w-100(src='static/img/arcade13.webp' alt='Foto Consola Arcade 13')
-            .carousel-item
-              img.d-block.w-100(src='static/img/arcade14.webp' alt='Foto Consola Arcade 14')
-            .carousel-item
-              img.d-block.w-100(src='static/img/arcade15.webp' alt='Foto Consola Arcade 15')
-            .carousel-item
-              img.d-block.w-100(src='static/img/arcade16.webp' alt='Foto Consola Arcade 16')
-            .carousel-item
-              img.d-block.w-100(src='static/img/arcade17.webp' alt='Foto Consola Arcade 17')
-            .carousel-item
-              img.d-block.w-100(src='static/img/arcade18.webp' alt='Foto Consola Arcade 18')
-            .carousel-item
-              img.d-block.w-100(src='static/img/arcade19.webp' alt='Foto Consola Arcade 19')
-            .carousel-item
-              img.d-block.w-100(src='static/img/arcade20.webp' alt='Foto Consola Arcade 20')
-          a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
-            span.carousel-control-prev-icon(aria-hidden='true')
-            span.sr-only Previous
-          a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
-            span.carousel-control-next-icon(aria-hidden='true')
-            span.sr-only Next
+    +closeBtn
+    .modal-dialog.modal-dialog-scrollable.modal-dialog-centered.modal-lg(role='document')
+        .modal-content
+            .modal-body
+                #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+                    ol.carousel-indicators
+                        li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+                        each val in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+                            li(data-target='#carouselExampleIndicators' data-slide-to=val)
+                    .carousel-inner
+                        .carousel-item.active
+                            img.d-block.w-100(src='static/img/consola1.webp' alt='Foto Consola Arcade 1')
+                        each val in [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,20]
+                            .carousel-item
+                                img.d-block.w-100(src='static/img/consola' + val + '.webp' alt='Foto Consola Arcade ' + val)
+                    a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
+                        span.carousel-control-prev-icon(aria-hidden='true')
+                        span.sr-only Previous
+                    a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
+                        span.carousel-control-next-icon(aria-hidden='true')
+                        span.sr-only Next
 
 //- 4 joystick console gallery
 #console4GalleryModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
-  .modal-dialog.modal-dialog-scrollable.modal-dialog-centered.modal-lg(role='document')
-    .modal-content
-      .modal-header
-        h3#exampleModalCenterTitle.modal-title
-          | Elegí entre más de 150 diseños ¡O
-          | personalizalo con el tuyo!
-        button.close(type='button' data-dismiss='modal' aria-label='Close')
-          span(aria-hidden='true') &times;
-      .modal-body
-        #carouselConsole4.carousel.slide(data-ride='carousel')
-          ol.carousel-indicators
-            li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
-            li(data-target='#carouselExampleIndicators' data-slide-to='1')
-            li(data-target='#carouselExampleIndicators' data-slide-to='2')
-          .carousel-inner
-            .carousel-item.active
-              img.d-block.w-100(src='static/img/consolaFour1.webp' alt='Foto Consola Arcade 1')
-            .carousel-item
-              img.d-block.w-100(src='static/img/consolaFour2.webp' alt='Foto Consola Arcade 2')
-            .carousel-item
-              img.d-block.w-100(src='static/img/consolaFour3.webp' alt='Foto Consola Arcade 3')
-          a.carousel-control-prev(href='#carouselConsole4' role='button' data-slide='prev')
-            span.carousel-control-prev-icon(aria-hidden='true')
-            span.sr-only Previous
-          a.carousel-control-next(href='#carouselConsole4' role='button' data-slide='next')
-            span.carousel-control-next-icon(aria-hidden='true')
-            span.sr-only Next
+    +closeBtn
+    .modal-dialog.modal-dialog-scrollable.modal-dialog-centered.modal-lg(role='document')
+        .modal-content
+            .modal-body
+                #carouselConsole4.carousel.slide(data-ride='carousel')
+                    ol.carousel-indicators
+                        li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+                        li(data-target='#carouselExampleIndicators' data-slide-to='1')
+                        li(data-target='#carouselExampleIndicators' data-slide-to='2')
+                    .carousel-inner
+                        .carousel-item.active
+                            img.d-block.w-100(src='static/img/consolaFour1.webp' alt='Foto Consola Arcade 1')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/consolaFour2.webp' alt='Foto Consola Arcade 2')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/consolaFour3.webp' alt='Foto Consola Arcade 3')
+                    a.carousel-control-prev(href='#carouselConsole4' role='button' data-slide='prev')
+                        span.carousel-control-prev-icon(aria-hidden='true')
+                        span.sr-only Previous
+                    a.carousel-control-next(href='#carouselConsole4' role='button' data-slide='next')
+                        span.carousel-control-next-icon(aria-hidden='true')
+                        span.sr-only Next
 
 //- Bartop Modal
 #bartopGalleryModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
-  .modal-dialog.modal-dialog-scrollable.modal-dialog-centered(role='document')
-    .modal-content
-      .modal-header
-        h3#exampleModalCenterTitle.modal-title
-          | Eleg&iacute; entre m&aacute;s de 150 dise&ntilde;os &iexcl;O
-          | personalizalo con el tuyo!
-        button.close(type='button' data-dismiss='modal' aria-label='Close')
-          span(aria-hidden='true') &times;
-      .modal-body
-        #carouselBartop.carousel.slide(data-ride='carousel')
-          ol.carousel-indicators
-            li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
-            li(data-target='#carouselExampleIndicators' data-slide-to='1')
-            li(data-target='#carouselExampleIndicators' data-slide-to='2')
-            li(data-target='#carouselExampleIndicators' data-slide-to='3')
-            li(data-target='#carouselExampleIndicators' data-slide-to='4')
-            li(data-target='#carouselExampleIndicators' data-slide-to='5')
-          .carousel-inner
-            .carousel-item.active
-              img.d-block.w-100(src='static/img/bartopBTTF3.webp' alt='Foto Bartop 1')
-            .carousel-item
-              img.d-block.w-100(src='static/img/bartopBTTF6.webp' alt='Foto Bartop 2')
-            .carousel-item
-              img.d-block.w-100(src='static/img/bartopBTTF4.webp' alt='Foto Bartop 3')
-            .carousel-item
-              img.d-block.w-100(src='static/img/bartopMulti4.webp' alt='Foto Bartop 4')
-            .carousel-item
-              img.d-block.w-100(src='static/img/bartopMulti3.webp' alt='Foto Bartop 5')
-            .carousel-item
-              img.d-block.w-100(src='static/img/bartopMulti5.webp' alt='Foto Bartop 6')
-          a.carousel-control-prev(href='#carouselBartop' role='button' data-slide='prev')
-            span.carousel-control-prev-icon(aria-hidden='true')
-            span.sr-only Previous
-          a.carousel-control-next(href='#carouselBartop' role='button' data-slide='next')
-            span.carousel-control-next-icon(aria-hidden='true')
-            span.sr-only Next
+    +closeBtn
+    .modal-dialog.modal-dialog-scrollable.modal-dialog-centered(role='document')
+        .modal-content
+            .modal-body
+                #carouselBartop.carousel.slide(data-ride='carousel')
+                    ol.carousel-indicators
+                        li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+                        each val in [1,2,3,4,5]
+                            li(data-target='#carouselExampleIndicators' data-slide-to=val)
+                    .carousel-inner
+                        .carousel-item.active
+                            img.d-block.w-100(src='static/img/bartopBTTF3.webp' alt='Foto Bartop 1')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/bartopBTTF6.webp' alt='Foto Bartop 2')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/bartopBTTF4.webp' alt='Foto Bartop 3')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/bartopMulti4.webp' alt='Foto Bartop 4')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/bartopMulti3.webp' alt='Foto Bartop 5')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/bartopMulti5.webp' alt='Foto Bartop 6')
+                    a.carousel-control-prev(href='#carouselBartop' role='button' data-slide='prev')
+                        span.carousel-control-prev-icon(aria-hidden='true')
+                        span.sr-only Previous
+                    a.carousel-control-next(href='#carouselBartop' role='button' data-slide='next')
+                        span.carousel-control-next-icon(aria-hidden='true')
+                        span.sr-only Next
+
+//- Arcade Modal
+#arcadeGalleryModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    +closeBtn
+    .modal-dialog.modal-dialog-scrollable.modal-dialog-centered(role='document')
+        .modal-content
+            .modal-body
+                #carouselArcade.carousel.slide(data-ride='carousel')
+                    ol.carousel-indicators
+                        li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+                        each val in [1,2,3,4,5,6,7,8]
+                            li(data-target='#carouselExampleIndicators' data-slide-to=val)
+                    .carousel-inner
+                        .carousel-item.active
+                            img.w-75(src='static/img/arcade1.webp' alt='Foto Arcade 1')
+                        each val in [2,3,4,5,6,7,8]
+                            .carousel-item
+                                img.w-75(src='static/img/arcade' + val + '.webp' alt='Foto Arcade ' + val)
+                    a.carousel-control-prev(href='#carouselArcade' role='button' data-slide='prev')
+                        span.carousel-control-prev-icon(aria-hidden='true')
+                        span.sr-only Previous
+                    a.carousel-control-next(href='#carouselArcade' role='button' data-slide='next')
+                        span.carousel-control-next-icon(aria-hidden='true')
+                        span.sr-only Next
 
 //- Flipper Modal
 #flipperGalleryModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
-  .modal-dialog.modal-dialog-scrollable.modal-dialog-centered(role='document')
-    .modal-content
-      .modal-header
-        h3#exampleModalCenterTitle.modal-title
-          | Más de 800 mesas entre clásicas y nuevas
-        button.close(type='button' data-dismiss='modal' aria-label='Close')
-          span(aria-hidden='true') &times;
-      .modal-body
-        #carouselFlipper.carousel.slide(data-ride='carousel')
-          ol.carousel-indicators
-            li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
-            li(data-target='#carouselExampleIndicators' data-slide-to='1')
-            li(data-target='#carouselExampleIndicators' data-slide-to='2')
-            li(data-target='#carouselExampleIndicators' data-slide-to='3')
-            li(data-target='#carouselExampleIndicators' data-slide-to='4')
-            li(data-target='#carouselExampleIndicators' data-slide-to='5')
-            li(data-target='#carouselExampleIndicators' data-slide-to='6')
-            li(data-target='#carouselExampleIndicators' data-slide-to='7')
-          .carousel-inner
-            .carousel-item.active
-              img.d-block.w-100(src='static/img/flipper2.webp' alt='Foto Flipper 1')
-            .carousel-item
-              img.d-block.w-100(src='static/img/flipper3.webp' alt='Foto Flipper 2')
-            .carousel-item
-              img.d-block.w-100(src='static/img/flipper1.webp' alt='Foto Flipper 3')
-            .carousel-item
-              img.d-block.w-100(src='static/img/flipper4.webp' alt='Foto Flipper 4')
-            .carousel-item
-              img.d-block.w-100(src='static/img/flipper5.webp' alt='Foto Flipper 5')
-            .carousel-item
-              img.d-block.w-100(src='static/img/flipper6.webp' alt='Foto Flipper 6')
-            .carousel-item
-              img.d-block.w-100(src='static/img/flipper7.webp' alt='Foto Flipper 7')
-          a.carousel-control-prev(href='#carouselFlipper' role='button' data-slide='prev')
-            span.carousel-control-prev-icon(aria-hidden='true')
-            span.sr-only Previous
-          a.carousel-control-next(href='#carouselFlipper' role='button' data-slide='next')
-            span.carousel-control-next-icon(aria-hidden='true')
-            span.sr-only Next
+    +closeBtn
+    .modal-dialog.modal-dialog-scrollable.modal-dialog-centered(role='document')
+        .modal-content
+            .modal-body
+                #carouselFlipper.carousel.slide(data-ride='carousel')
+                    ol.carousel-indicators
+                        li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+                        each val in [1,2,3,4,5,6]
+                            li(data-target='#carouselExampleIndicators' data-slide-to=val)
+                    .carousel-inner
+                        .carousel-item.active
+                            img.d-block.w-100(src='static/img/flipper2.webp' alt='Foto Flipper 1')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/flipper3.webp' alt='Foto Flipper 2')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/flipper1.webp' alt='Foto Flipper 3')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/flipper4.webp' alt='Foto Flipper 4')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/flipper5.webp' alt='Foto Flipper 5')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/flipper6.webp' alt='Foto Flipper 6')
+                        .carousel-item
+                            img.d-block.w-100(src='static/img/flipper7.webp' alt='Foto Flipper 7')
+                    a.carousel-control-prev(href='#carouselFlipper' role='button' data-slide='prev')
+                        span.carousel-control-prev-icon(aria-hidden='true')
+                        span.sr-only Previous
+                    a.carousel-control-next(href='#carouselFlipper' role='button' data-slide='next')
+                        span.carousel-control-next-icon(aria-hidden='true')
+                        span.sr-only Next

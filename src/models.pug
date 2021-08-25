@@ -1,0 +1,13 @@
+- var n = 1
+doctype html
+html
+  head
+    include includes/head.pug
+  body
+    h2(style='margin-top: 5%') Diseños disponibles
+    .models-container
+      while n < 264
+        .models-container-item
+          .models-item-overflow
+            p= n
+          img(loading="lazy" src='static/img/'+ n++ +'.jpg')
