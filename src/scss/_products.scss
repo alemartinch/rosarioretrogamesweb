@@ -336,6 +336,7 @@
     justify-content: space-around;
     text-align: center;
     font-size: 0.8em;
+    border-radius: 5px;
     @media screen and (max-width: $tablet), (orientation: portrait) {
       width: 100%;
       height: 100%;
@@ -352,6 +353,7 @@
     padding: 10px;
     text-align: center;
     font-size: 0.8em;
+    border-radius: 5px;
 
     @media screen and (max-width: $tablet), (orientation: portrait) {
       width: 100%;
@@ -369,6 +371,38 @@
     padding: 10px;
     text-align: center;
     font-size: 0.8em;
+    border-radius: 5px;
+
+    @media screen and (max-width: $tablet), (orientation: portrait) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .new-price {
+    position: relative;
+    height: 120px;
+    background-color: $green;
+    border: 2px red solid;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8em;
+    border-radius: 5px;
+
+    &:after {
+      content: "Nuevo!";
+      font-size: 0.8em;
+      padding: 0 5px;
+      position: absolute;
+      top: 10px;
+      color: $white;
+      background-color: #bb281f;
+      border-radius: 5px;
+    }
 
     @media screen and (max-width: $tablet), (orientation: portrait) {
       width: 100%;
