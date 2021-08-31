@@ -48,11 +48,11 @@
     &:nth-child(3) {
       @media (max-width: $tablet), (orientation: portrait) {
         flex-direction: column;
-        height: 950px;
+        height: 830px;
         justify-content: space-between;
 
         .model-text {
-          height: 600px;
+          height: 500px;
         }
       }
     }
@@ -120,6 +120,42 @@
     &:nth-child(9) {
       @media (max-width: $tablet), (orientation: portrait) {
         flex-direction: column;
+        height: 750px;
+        justify-content: space-between;
+
+        .model-text {
+          height: 400px;
+        }
+      }
+    }
+
+    &:nth-child(10) {
+      @media (max-width: $tablet), (orientation: portrait) {
+        flex-direction: column;
+        height: 750px;
+        justify-content: space-between;
+
+        .model-text {
+          height: 400px;
+        }
+      }
+    }
+
+    &:nth-child(11) {
+      @media (max-width: $tablet), (orientation: portrait) {
+        flex-direction: column;
+        height: 750px;
+        justify-content: space-between;
+
+        .model-text {
+          height: 400px;
+        }
+      }
+    }
+
+    &:nth-child(12) {
+      @media (max-width: $tablet), (orientation: portrait) {
+        flex-direction: column;
         height: 900px;
         justify-content: space-between;
 
@@ -177,11 +213,33 @@
     );
   }
 
+  .miniconsole-plus {
+    @include product-card(
+                    url('../static/img/RBcase.png') no-repeat,
+                    url('../static/img/bgMiniconsolaPlus.png') no-repeat
+    );
+    background-size: 80%, 103%;
+    @media screen and (max-width: $tablet), (orientation: portrait) {
+      background-size: 80%, 100% 100%;
+    }
+  }
+
   .arcade {
     @include product-card(
                     url(../static/img/arcade.png) no-repeat,
                     url(../static/img/bgArcade.webp) no-repeat
     );
+  }
+
+  .arcade-plus {
+    @include product-card(
+                    url(../static/img/arcade.png) no-repeat,
+                    url(../static/img/bgArcadePlus.png) no-repeat
+    );
+    background-size: 80%, 103%;
+    @media screen and (max-width: $tablet), (orientation: portrait) {
+      background-size: 80%, 100% 100%;
+    }
   }
 
   .console {
@@ -191,6 +249,17 @@
     );
   }
 
+  .console-plus {
+    @include product-card(
+                    url(../static/img/consola2mandos.png) no-repeat,
+                    url(../static/img/bgConsolaPlus.png) no-repeat
+    );
+    background-size: 80%, 103%;
+    @media screen and (max-width: $tablet), (orientation: portrait) {
+      background-size: 80%, 100% 100%;
+    }
+  }
+
   .console-four {
     @include product-card(
                     url(../static/img/consola4mandos.png) no-repeat,
@@ -198,11 +267,33 @@
     );
   }
 
+  .console-four-plus {
+    @include product-card(
+                    url(../static/img/consola4mandos.png) no-repeat,
+                    url(../static/img/bgArcadePlus.png) no-repeat
+    );
+    background-size: 80%, 103%;
+    @media screen and (max-width: $tablet), (orientation: portrait) {
+      background-size: 80%, 100% 100%;
+    }
+  }
+
   .bartop {
     @include product-card(
                     url(../static/img/bartop.png) no-repeat,
                     url(../static/img/bgMiniconsola.webp) no-repeat
     );
+  }
+
+  .bartop-plus {
+    @include product-card(
+                    url(../static/img/bartop.png) no-repeat,
+                    url(../static/img/bgMiniconsolaPlus.png) no-repeat
+    );
+    background-size: 70%, 103%;
+    @media screen and (max-width: $tablet), (orientation: portrait) {
+      background-size: 80%, 100% 100%;
+    }
   }
 
   .joystick {
