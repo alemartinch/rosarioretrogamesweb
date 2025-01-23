@@ -301,7 +301,7 @@
                     url(../static/img/pedestal.png) no-repeat,
                     url(../static/img/bgConsola.webp) no-repeat
     );
-    background-size: 70%, 103%;
+    background-size: 80%, 103%;
     @media screen and (max-width: $tablet), (orientation: portrait) {
       background-size: 80%, 100% 100%;
     }
