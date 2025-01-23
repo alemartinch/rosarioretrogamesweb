@@ -226,14 +226,14 @@
 
   .arcade {
     @include product-card(
-                    url(../static/img/arcade.png) no-repeat,
+                    url(../static/img/arcadeslim.png) no-repeat,
                     url(../static/img/bgArcade.webp) no-repeat
     );
   }
 
   .arcade-plus {
     @include product-card(
-                    url(../static/img/arcade.png) no-repeat,
+                    url(../static/img/arcadeslim.png) no-repeat,
                     url(../static/img/bgArcadePlus.png) no-repeat
     );
     background-size: 80%, 103%;
